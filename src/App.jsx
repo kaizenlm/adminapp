@@ -1,20 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import BackLogin from './components/backlogin/backlogin.jsx'
-import MainMenu from './components/mainmenu/mainmenu.jsx'
+import FrontLogin from './components/frontlogin/frontlogin.jsx'
+import MainMenu from './components/frontmainmenu/frontmainmenu.jsx'
+import UserManager from './components/frontregistrar/frontregistrar.jsx'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 
 
-
+// K147593
 
 function App() {
 
   return (
-    <div>
-    <BackLogin />
-      {/* <MainMenu /> */}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<FrontLogin />} />
+        <Route path="/registrar" element={<UserManager />} />
+        <Route path="/menu" element={<MainMenu />} />
+      </Routes>
+
+    </Router>
   )
 }
 
