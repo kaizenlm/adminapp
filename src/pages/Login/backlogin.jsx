@@ -57,7 +57,7 @@ export const validarCredenciales = (username, password) => {
     );
 
     if (usuarioEncontrado) {
-        const { password, ...datosSesion } = usuarioEncontrado; // Excluimos password
+        const { password, ...datosSesion } = usuarioEncontrado; 
         return datosSesion;
     }
     return null;

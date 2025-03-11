@@ -1,7 +1,53 @@
 @import "tailwindcss";
+
+@theme {
+  --color-smneutral900: #212134;
+  --color-smneutral800: #32324D;
+  --color-smneutral700: #4a4a6a;
+  --color-smneutral600: #666687;
+  --color-smneutral500: #8e8ea9;
+  --color-smneutral400: #A5A5BA;
+  --color-smneutral300: #C0C0CF;
+  --color-smneutral200: #DCDCE4;
+  --color-smneutral150: #eaeaef;
+  --color-smneutral100: #f6f6f9;
+  --color-smneutral0: #ffffff;
+
+  --color-smprimary700: #3a2d76;
+  --color-smprimary600: #615793;
+  --color-smprimary500: #8981ae;
+  --color-smprimary200: #c4c0d7;
+  --color-smprimary100: #e0eaf2;
+
+
+  --color-smsecondary800: #faa300;
+  --color-smsecondary700: #ffb01d;
+  --color-smsecondary600: #ffc061;
+  --color-smsecondary500: #ffd88e;
+  --color-smsecondary200: #ffe7bb;
+  --color-smsecondary100: #fff7e8;
+
+  --color-smexito700: #24a44b;
+  --color-smexito500: #4ad775;
+  --color-smexito200: #b4efc6;
+  --color-smerror700: #decfcf;
+  --color-smerror500: #f24343;
+  --color-smerror200: #fccccc;
+
+  --gradient-three-columns: linear-gradient(to right,
+      #39396C 0%,
+      #39396C 25%,
+      #2B2B58 40%,
+      #39396C 75%,
+      #39396C 100%);
+}
+
+.bg-three-columns {
+  background-image: var(--gradient-three-columns);
+}
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
   background-color: gray;
-
 }
